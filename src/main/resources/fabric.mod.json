@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hackmod",
+	"version": "${version}",
+	"name": "hackmod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"malanak"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hackmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.malanak.hackmod.HackMod"
+		],
+		"client": [
+		  "com.malanak.hackmod.HackModClient"
+		],
+		"fabric-datagen": [
+		  "com.malanak.hackmod.HackModDataGenerator"
+		]
+	},
+	"mixins": [
+		"hackmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
